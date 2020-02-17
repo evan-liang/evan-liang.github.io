@@ -159,6 +159,9 @@
     </h1>
   
 
+        <!--显示阅读次数-->
+        
+        <!--显示阅读次数完毕-->
         
         <a href="/posts/b24dd347/" class="archive-article-date">
   	<time datetime="2020-02-16T08:38:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-16</time>
@@ -167,26 +170,23 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+      <!-- 文章头增加转载声明 -->
+      
+      
+        <div class="topdeclare" hidden="hidden"></div>
+      
+      <!-- 文章头增加转载声明结束 -->
       
         <h3 id="写点什么？"><a href="#写点什么？" class="headerlink" title="写点什么？"></a>写点什么？</h3><p>这个博客是我使用 Hexo 和 Git 搭建的，由于没有代码基础，学习过程中踩了很多的坑，于是我打算在我的第一篇博客中，将这些坑一一记录，以备今后不时之需。</p>
 <p>待补充</p>
 
-      <script>
-        window.disqusProxy={
-          shortname: 'Evan',
-          username: 'Evan',
-          server: 'null',
-          port: null,
-          adminAvatar: '/avatars/admin-avatar.jpg',
-          identifier: 'posts/b24dd347/',
-        };
-        window.disqus_config = function () {
-          this.page.url = window.location.href;
-          this.page.identifier = window.disqusProxy.identifier;
-        };
-      </script>
       
-
+        <!-- 文章末尾增加版权声明 -->
+        
+        
+        <div class="declare" hidden="hidden"></div>
+        
+        <!-- 文章末尾增加版权声明结束 -->
       
     </div>
     <div class="article-info article-info-index">
@@ -225,6 +225,28 @@
 
 
 
+<!-- 魔改增加gitalk评论 -->
+
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+  var gitalk = new Gitalk({
+    clientID: 'd3587fb2568d46be991d',
+    clientSecret: '35085fe0d53f5e558413c1090a7a1752bf14925c',
+    repo: 'evan-liang.github.io',
+    owner: 'evan-liang',
+    admin: ['evan-liang'],
+    id: '',
+    distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+  
   
   
 
